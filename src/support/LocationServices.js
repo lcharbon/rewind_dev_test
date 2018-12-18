@@ -38,7 +38,6 @@ class LocationServices {
 		var currentPredictionCallBacks = this.predictionCallBacks;
 
 		function predictionCallback(data) {
-			console.log(currentPredictionCallBacks[currentPredictionCallBacks.length -1] === currentPredictionCallback);
 			if (currentPredictionCallBacks[currentPredictionCallBacks.length -1] !== currentPredictionCallback) return;
 			else {
 				predictionGetSuccess(data);

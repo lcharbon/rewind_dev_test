@@ -7,6 +7,7 @@ import settings from "../../support/settings.json";
 import locationServices from "../../support/LocationServices.js";
 import InputTypeAhead from "../Inputs/InputTypeAhead/InputTypeAhead.js";
 import WeatherCard from "../WeatherCard/WeatherCard.js";
+import $T from "../../support/translations";
 
 class App extends Component {
 	constructor(props, context) {
@@ -90,6 +91,7 @@ class App extends Component {
 							items={ this.state.cityPredictions }
 							refreshItems={ this.refreshSuggestions.bind(this) }
 							onchange={ this.oncityselect.bind(this) }
+							placeholder={$T(2)}
 						/>
 					</div>
 				</div>

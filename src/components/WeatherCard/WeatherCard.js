@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import styles from './WeatherCard.module.css';
+import React, { Component } from "react";
+import styles from "./WeatherCard.module.css";
 
 class WeatherCard extends Component {
 	

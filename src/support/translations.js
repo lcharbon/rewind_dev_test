@@ -1,6 +1,7 @@
 const TRANSLATIONTABEL = {
 	1: "No Results",
-}
+	2: "Select City"
+};
 
 function $T(id) {
 	return TRANSLATIONTABEL[id];
