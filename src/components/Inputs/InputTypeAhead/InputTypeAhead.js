@@ -21,11 +21,17 @@ class InputTypeAhead extends InputUnderline {
 	}
 
 	onselect(id) {
+		let selectedCaption;
+		
 		if (this.selectBlock) return;
+
+		selectedCaption = this.getItemById(id).caption;
 
 		this.selectBlock = true;	
 
 		this.props.onchange(id);
+
+		this.inputDOM.value = selectedCaption ? selectedCaption : "";
 
 		setTimeout((function() {
 			this.selectBlock = false;
@@ -33,10 +39,14 @@ class InputTypeAhead extends InputUnderline {
 		}).bind(this), 300);
 	}
 
+	getItemById(id) {
+		return this.props.items.find(function(item) {
+			return item.id === id;
+		});
+	}
+
 	getSelectedCaption() {
-		var selectedItem = this.props.items.find((function(item) {
-			return item.id === this.props.selectedID;
-		}).bind(this));
+		var selectedItem = this.getItemById(this.props.selectedID);
 
 		return (selectedItem && selectedItem.caption) || "";
 	}
