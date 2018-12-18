@@ -3,8 +3,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1) Install the node package manager [yarn](https://yarnpkg.com/lang/en/) (npm will do, but you're on your own).
 2) Run `yarn install` in the project root directory.
 3) Run `yarn install` in the serverless directory.
+3) Install serverless globaly by running `yarn global add serverless`.
 4) Run `yarn start` in the project root directory.
-5) Notice app appear in browser. If not navigate to `http://localhost:3000`
+5) Notice app appear in browser. If not navigate to `http://localhost:3000`.
 
 ## Available Scripts
 
