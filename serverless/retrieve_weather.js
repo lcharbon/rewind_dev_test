@@ -73,7 +73,7 @@ module.exports.handler = function(event, context, callback) {
 		let response =  {
 			statusCode: 200,
 			body: JSON.stringify({
-				// accuWeather: await queryAccuWeather().catch(),
+				accuWeather: await queryAccuWeather().catch(),
 				forcastIO: await queryForcastIO(),
 				openWeatherMap: await queryOpenWeather()
 			}),

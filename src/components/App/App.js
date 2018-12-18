@@ -23,6 +23,10 @@ class App extends Component {
 	}
 
 	oncityselect(placeId) {
+		if (placeId === this.lastPlaceId) return;
+		
+		this.lastPlaceId = placeId;
+
 		function retrievePlaceSuccess(obj) {
 			let data = {
 				lat: obj.lat(),
@@ -57,10 +61,6 @@ class App extends Component {
 			location: undefined,
 			radius: undefined,
 		};
-
-		if (this.lastSearch === search) return;
-
-		this.lastSearch = search;
 
 		function predictionGetSuccess(predictions) {
 			let items = [];
