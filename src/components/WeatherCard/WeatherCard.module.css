@@ -1,0 +1,46 @@
+@value colors: "../../support/colors.css";
+@value primary, secondary, tertiary, quaternary, quinary from colors;
+
+.main {
+    position: relative;
+    display: inline-block;
+    background-color: quaternary;
+    border: 2px solid primary;
+    border-radius: 4px;
+    width: 150px;
+    height: 200px;
+}
+
+.source {
+    position: absolute;
+    top: 6px;
+    width: 100%;
+    color: quinary;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+
+.temperature {
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    color: primary;
+    font-size: 72px;
+    text-align: center
+}
+
+.temperature span {
+    font-size: 22px; 
+    vertical-align: super;
+}
+
+.summary{
+    position: absolute;
+    letter-spacing: 0.8px;
+    color: secondary;
+    font-size: 20px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}

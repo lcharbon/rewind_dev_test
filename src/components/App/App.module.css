@@ -1,0 +1,20 @@
+@value colors: "../../support/colors.css";
+@value primary, secondary, tertiary, quaternary, quinary from colors;
+
+.app {
+  margin: 60px auto;
+  width: 640px;
+  border: 2px solid primary;
+  border-radius: 5px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px;
+}
+
+.input-container {
+  width: 510px;
+  margin: 20px auto;
+}
