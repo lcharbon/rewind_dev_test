@@ -1,4 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+1) Install the node package manager [yarn](https://yarnpkg.com/lang/en/) (npm will do, but you're on your own).
+2) Run `yarn install` in the project root directory.
+3) Run `yarn install` in the serverless directory.
+4) Run `yarn start` in the project root directory.
+5) Notice app appear in browser. If not navigate to `http://localhost:3000`
 
 ## Available Scripts
 
